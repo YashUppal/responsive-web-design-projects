@@ -1,4 +1,4 @@
-# Responsive Web Design Projects 
+# Responsive Web Design Projects
 
 ## HTML & CSS
 

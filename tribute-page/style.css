@@ -1,0 +1,8 @@
+img {
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: max-content;
+    width: 100%;
+    height: auto;
+}
