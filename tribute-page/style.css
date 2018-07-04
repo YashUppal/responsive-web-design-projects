@@ -1,7 +1,7 @@
 body {
     background: #040b05;
     font-family: 'Fjalla One';
-    font-size: 3vw;
+    font-size: 4vw;
     font-weight: 700;
     color: black;
 
@@ -13,6 +13,7 @@ div {
 
 #main {
     
+    justify-items: center;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr;
@@ -20,6 +21,7 @@ div {
 }
 
 #img-div {
+    align-items: center;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
@@ -36,7 +38,6 @@ div {
 
 #tribute-link {
     text-align: center;
-    background: #f3c02b;
     color: #040b05;
 }
 
@@ -53,8 +54,8 @@ img {
     display: block;
     margin-right: auto;
     margin-left: auto;
-    max-width: max-content;
-    width: 100%;
+    max-width: fit-content;
+    width: 96%;
     height: auto;
 }
 
