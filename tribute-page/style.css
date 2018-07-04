@@ -1,3 +1,54 @@
+body {
+    background: #040b05;
+    font-family: 'Fjalla One';
+    font-size: 3vw;
+    font-weight: 700;
+    color: black;
+
+}
+
+div {
+    margin: 20px;
+}
+
+#main {
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    grid-gap: 5px;
+}
+
+#img-div {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-gap: 5px;
+
+}
+
+#title{
+
+    text-align: center;
+    grid-row: span 1;
+
+}
+
+#tribute-link {
+    text-align: center;
+    background: #f3c02b;
+    color: #040b05;
+}
+
+#img-caption {
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+}
+
+
 img {
     display: block;
     margin-right: auto;
@@ -5,4 +56,10 @@ img {
     max-width: max-content;
     width: 100%;
     height: auto;
+}
+
+.yellow_background {
+    padding: 5px;
+    background-color: #f3c02b;
+    border-radius: 3px;
 }
