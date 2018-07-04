@@ -1,5 +1,5 @@
 img {
-    position: relative;
+    display: block;
     margin-right: auto;
     margin-left: auto;
     max-width: max-content;
