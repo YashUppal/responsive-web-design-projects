@@ -14,18 +14,19 @@ body {
     grid-gap: 30px;
     /* grid-auto-rows: max-content;  */
     padding: 5%;  
-    font-size: 1.5vw;  
+    font-size: 1em;  
 }
 
+
 h1 {
-    font-size: 3vw;
+    font-size: 2.5em;
     text-align: center;
     margin:10px;
     
 }
 
 p {
-    font-size: 1.8vw;
+    font-size: 1.5em;
     text-align: center;
 }
 
@@ -59,7 +60,7 @@ label[for="recommendation"] {
 
 #dropdown {
     grid-column: 2 / 2;
-    font-size: 1.5vw;
+    font-size: 1em;
 }
 
 .recommendationto{
@@ -68,7 +69,7 @@ label[for="recommendation"] {
 
 select#likeinfcc {
     grid-column: 2 / 2;
-    font-size: 1.5vw;
+    font-size: 1em;
 }
 
 .right {
@@ -77,7 +78,7 @@ select#likeinfcc {
 
 button {
     grid-column: span 2;
-    font-size: 1.5vw;
+    font-size: 1em;
     width: 50%;
     background-color: #006400;
     border: 1px solid #004a00;
@@ -92,7 +93,7 @@ button:hover{
 }
 
 .fa-free-code-camp{
-    font-size: 1.5vw;
+    font-size: 1emvw;
 }
 
 .inc-height {
@@ -105,3 +106,4 @@ padding-left: 10px;
 textarea {
     border-radius: 4px;
 }
+
