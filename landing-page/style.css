@@ -1,41 +1,14 @@
-body {
-    font-size: 10px;
-}
 
 
-/* #header {
-    display: flex;
-    justify-content: space-between;
-}
-
-#links{
-    display: flex;
-    justify-content: flex-end;
-    font-size: 2vw;
-}
-
-a.nav-link{
-    margin-left:auto;
-}
-
-#logo img{
-    width: 50px;
-    height: auto;
-}
-
-#logo {
-    display: block;
-    text-align: center;
-    font-size: 2.5vw;
-}; */
 
 
 header {
     display: flex;
     justify-content: space-between;
-    background-color: #222;
+    background-color: #e1d669;
     height: auto;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
     font-size: 1.5rem;
     text-transform: uppercase;
 }
@@ -56,16 +29,14 @@ header #links {
     
 }
 header #links a {
-    /* color: #251c1c; */
-    color: #e1d669;
+    color: #222;
     margin-right: 10px;
     text-decoration: none;
     font-size: 1.2rem;
 }
 
 header #logo a {
-    /* color: #251c1c; */
-    color: #e1d669;
+    color: #222;
     margin-left: 3%;
     text-decoration: none;
     padding: 3%;
@@ -88,12 +59,12 @@ header #logo a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px;
+    padding: 30px;
     font-size: 1rem;
     background: url("https://cdn.pixabay.com/photo/2017/02/17/05/53/watch-2073423_960_720.jpg");
     background-size: cover;
     background-position: center;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Cormorant Garamond', serif;
 
 }
 
@@ -101,6 +72,7 @@ header #logo a {
     font-size: 3rem;
     text-transform: uppercase;
     color: #e1d669;
+    font-weight: 400;
     
 }
 #getstarted h3 {
@@ -125,7 +97,6 @@ header #logo a {
 }
 
 #form input[type="email"]{
-    /* margin-top: 20px; */
     padding: 10px;
     border-radius: 6px;
     border: 3px double;
@@ -138,10 +109,10 @@ header #logo a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgba(34, 34, 34, 0.5);
+    background-color: rgba(34, 34, 34, 0.8);
     width: 100%;
     height: auto;
-    border-radius: 3px;
+    border-radius: 6px;
 
 }
 
@@ -151,10 +122,10 @@ header #logo a {
     justify-content: space-evenly;
     flex-basis: inherit;
     justify-content: stretch;
-    background-color: black;
+    background-color: #222;
     color:#e1d669;
     font-size: 10px;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Cormorant Garamond', serif;
 }
 
 
@@ -163,7 +134,7 @@ header #logo a {
     flex-direction: column;
     align-items: center;
     flex: 1 1 auto;
-    width: 33%;
+    width: 33.33%;
     text-align: center;
     margin-top: 5%;
     padding: 3%;
@@ -182,7 +153,7 @@ header #logo a {
     font-size: 2em;
 
     flex: 1 1 auto;
-    width: 33%;
+    width: 33.33%;
 
 
 }
@@ -194,7 +165,7 @@ header #logo a {
     margin-top: 5%;
     padding: 3%;
     flex: 1 1 auto;
-    width: 33%;
+    width: 33.33%;
     font-size: 2em;
 
 
@@ -202,4 +173,102 @@ header #logo a {
 
 i.fas , i.fab{
     font-size: 3rem;
+}
+
+i.fa-crown {
+    margin-right: 5%;
+}
+
+#product-video {
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+    background-color: #222;
+    margin-top: -5px;
+}
+
+/* #products {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+#products ul {
+    list-style-type: none;
+    display: block;
+    text-align: center;
+}
+
+#prod1{
+    width: 33.33%;
+    background-color: white;
+    text-align: center;
+}
+#prod2{
+    width: 33.33%;
+    background-color: white;
+    text-align: center;
+
+}
+#prod3{
+    width: 33.33%;
+    background-color: white;
+    text-align: center;
+
+} */
+
+#about {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 5%;
+    border-top: 1px solid #e1d669;
+    background-color: #222;
+    color: #e1d669;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.5em;
+}
+
+#history {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 5%;
+    border-top: 1px solid #e1d669;
+    background-color: #222;
+    color: #e1d669;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.5em;
+}
+
+
+#footer {
+    
+     background-color: #e1d669;
+     color: #222;
+     padding: 2%;
+     font-family: 'Cormorant Garamond', serif;
+     font-size: 1.2em;
+    
+}
+
+#footer ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+
+#footer ul li {
+    padding: 0 10px;
+}
+
+#footer a {
+    text-decoration: none;
+    color: #222;
+}
+
+#footer span {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 10px;
 }
