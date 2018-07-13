@@ -1,0 +1,19 @@
+body {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+#navbar {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#navbar header {
+    text-align: center;
+    padding: 4vw;
+}
