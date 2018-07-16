@@ -1,0 +1,80 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+#navbar {
+    background: #00B4DB;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: grid;
+    grid-template-rows: 1fr;
+}
+
+#navbar ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0;
+}
+
+#navbar ul a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#welcome-section {
+    height: 100vh;
+    background: #00B4DB;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30% 10% 10%;
+    justify-items: center;
+    align-content: center;
+    color: white;
+}
+
+
+
+#john-photo {
+    border-radius: 50%;
+    width: 40%;
+    height: auto;
+}
+
+#projects {
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+
+.project-title {
+    font-size: 1.2em;
+    text-align: center;
+
+}
+
+.project-tile {
+
+    background: gray;
+    justify-items: flex-end;
+    
+}
+
+.project-img {
+    border-radius: 10px;
+    width: 50%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
