@@ -1,5 +1,7 @@
 body {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 *,
@@ -8,12 +10,149 @@ body {
     box-sizing: inherit;
 }
 
-#navbar {
+body {
+    font-size: 16px;
+}
+
+@media only screen and (min-width: 426px ) {
+
+
+
+#container {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 2fr;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#navbar {
+    position: fixed;
+    height: 100vh;
+    width: 30vw;
+    border-right: 3px solid black;
+    grid-column-start: 1;
+    /* position: fixed; */
 }
 
 #navbar header {
-    text-align: center;
-    padding: 4vw;
+    font-weight: 800;
+    font-size: 1.5em;
+    /* text-align: center; */
+    padding: 5%;
 }
+
+#navbar ul {
+    list-style: none;
+    padding: 0;
+}
+
+#navbar ul li {
+    padding-left: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-right: 5%;
+    border-top: 1px solid #c0b6b6;
+    border-bottom: 1px solid #c0b6b6;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+#main-doc {
+    margin-left: 3%;
+    margin-right: 3%;
+    line-height: 1.5;
+    grid-column-start: 2;
+    padding: 6% 0;
+}
+
+#main-doc header {
+    font-size: 1.5em;
+}
+
+#main-doc code {
+    background-color: #f7f7f7;
+    border-radius: 4px;
+    display: block;
+    padding: 10%;
+    margin: 5%;
+    font-weight: lighter;
+    font-family: 'Inconsolata', monospace;
+
+
+}}
+
+@media only screen and (max-width: 426px) {
+
+
+    #container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 30%;
+        font-family: 'Open Sans', sans-serif;
+
+    }
+
+    #navbar {
+        margin-bottom: 7%;
+    }
+
+    #navbar header {
+        font-weight: 800;
+        font-size: 1.5em;
+        text-align: center;
+        padding: 5%;
+    }
+    #navbar ul {
+        border: 1px solid black;
+        padding: 0;
+        margin: 0;
+        max-height: 25vh;
+        overflow: auto;
+        
+    }
+    #navbar li {
+        border-top: 1px solid #c0b6b6;
+        border-bottom: 1px solid #c0b6b6;
+        list-style: none;
+        padding: 3%;
+    }
+
+    #main-doc {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 0 7%;
+        line-height: 1.5;
+    }
+
+    #main-doc header {
+        font-size: 1.5em;
+    }
+
+    #main-doc ul {
+        /* padding-left: 1px; */
+    }
+
+    #main-doc ul li {
+        margin-top: 5%;
+        margin-left: 5%;
+    }
+
+    #navbar ul li a {
+        text-decoration: none;
+        color: black;
+    }
+
+    #main-doc code {
+        background-color: #f7f7f7;
+        border-radius: 4px;
+        display: block;
+        padding: 10%;
+        margin: 5%;
+        font-weight: lighter;
+        font-family: 'Inconsolata', monospace;
+
+    }
+}
+

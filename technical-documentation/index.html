@@ -9,22 +9,25 @@
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <!-- stylesheet -->
     <link rel="stylesheet" href="style.css">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Open+Sans" rel="stylesheet">
 </head>
 <body>
-
+<div id="container">
     <nav id="navbar">
         <header>JS Documentation</header>
         <ul>
         <li><a href="#Introduction" class="nav-link" >Introduction</a></li>
-        <li><a href="#What_you_should_know" class="nav-link" >What you should know</a></li>
-        <li><a href="#Javascript_and_Java" class="nav-link" >JavaScript and Java</a></li>
+        <li><a href="#What_you_should_already_know" class="nav-link" >What you should already know</a></li>
+        <li><a href="#JavaScript_and_Java" class="nav-link" >JavaScript and Java</a></li>
         <li><a href="#Hello_World" class="nav-link" >Hello World</a></li>
         <li><a href="#Variables" class="nav-link" >Variables</a></li>
-        <li><a href="#Declaring_Variables" class="nav-link" >Declaring Variables</a></li>
+        <li><a href="#Declaring_variables" class="nav-link" >Declaring variables</a></li>
         <li><a href="#Variable_scope" class="nav-link" >Variable scope</a></li>
         <li><a href="#Global_Variables" class="nav-link" >Global Variables</a></li>
         <li><a href="#Constants" class="nav-link" >Constants</a></li>
         <li><a href="#Data_Types" class="nav-link" >Data Types</a></li>
+        <li><a href="#Reference" class="nav-link" >Reference</a></li>
         </ul>
     </nav>
 
@@ -45,7 +48,7 @@
             
         </section>
 
-        <section class="main-section" id="What_you_should_know">
+        <section class="main-section" id="What_you_should_already_know">
             <header>What you should already know</header>
            
             <p>This guide assumes you have the following basic background:</p>
@@ -57,44 +60,43 @@
         
         </section>
 
-        <section class="main-section" id="Javascript_and_Java">
-            <header>
-            <h1>JavaScript and Java</h1>
+        <section class="main-section" id="JavaScript_and_Java">
+            <header>JavaScript and Java</header>
+            
             <p>JavaScript and Java are similar in some ways but fundamentally different in some others. The JavaScript language resembles Java but does not have Java's static typing and strong type checking. JavaScript follows most Java expression syntax, naming conventions and basic control-flow constructs which was the reason why it was renamed from LiveScript to JavaScript.</p>
 
             <p>In contrast to Java's compile-time system of classes built by declarations, JavaScript supports a runtime system based on a small number of data types representing numeric, Boolean, and string values. JavaScript has a prototype-based object model instead of the more common class-based object model. The prototype-based model provides dynamic inheritance; that is, what is inherited can vary for individual objects. JavaScript also supports functions without any special declarative requirements. Functions can be properties of objects, executing as loosely typed methods.</p>
 
             <p>JavaScript is a very free-form language compared to Java. You do not have to declare all variables, classes, and methods. You do not have to be concerned with whether methods are public, private, or protected, and you do not have to implement interfaces. Variables, parameters, and function return types are not explicitly typed.</p>
-        </header>
+        
         </section>
 
         <section class="main-section" id="Hello_World">
-            <header>
-            <h1>Hello world</h1>
+            <header>Hello World</header>
             <p>To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code:</p>
             
             <code>function greetMe(yourName) {
                     alert("Hello " + yourName);
                   }
                   greetMe("World");</code>
-                </header>
+                
         </section>
 
 
         <section class="main-section" id="Variables">
-            <header>
-            <h1>Variables</h1>
+            <header>Variables</header>
+            
             <p>You use variables as symbolic names for values in your application. The names of variables, called identifiers, conform to certain rules.</p>
 
             <p>A JavaScript identifier must start with a letter, underscore (_), or dollar sign ($); subsequent characters can also be digits (0-9). Because JavaScript is case sensitive, letters include the characters "A" through "Z" (uppercase) and the characters "a" through "z" (lowercase).</p>
 
             <p>You can use ISO 8859-1 or Unicode letters such as å and ü in identifiers. You can also use the Unicode escape sequences as characters in identifiers. Some examples of legal names are Number_hits, temp99, and _name.</p>
-        </header>
+        
         </section>
 
-        <section class="main-section" id="Declaring_Variables">
-            <header>
-            <h1>Declaring variables</h1>
+        <section class="main-section" id="Declaring_variables">
+            <header>Declaring variables</header>
+             
 
             <p>You can declare a variable in three ways:
                     With the keyword var. For example,</p>
@@ -111,15 +113,15 @@
 
                     With the keyword let. For example,</p>
 
-            <code> let y = 13.</code>This syntax can be used to declare a block scope local variable. See Variable scope below.
+            <code> let y = 13.</code>
 
             <p>This syntax can be used to declare a block scope local variable. See Variable scope below.</p>
-        </header>
+        
         </section>
 
-        <section class="main-section" id"Variable_scope">
-            <header>
-            <h1>Variable scope</h1>
+        <section class="main-section" id="Variable_scope">
+            <header>Variable scope</header>
+             
 
             <p>When you declare a variable outside of any function, it is called a global variable, because it is available to any other code in the current document. When you declare a variable within a function, it is called a local variable, because it is available only within that function.</p>
 
@@ -137,22 +139,22 @@
                   }
                   console.log(y);  
                   // ReferenceError: y is not defined</code>
-                </header>
+                
         </section>
 
         <section class="main-section" id="Global_Variables">
-            <header>
-            <h1>Global Variables</h1>
+            <header>Global Variables</header>
+             
 
             <p>Global variables are in fact properties of the global object. In web pages the global object is window, so you can set and access global variables using the window.variable syntax.</p>
 
             <p>Consequently, you can access global variables declared in one window or frame from another window or frame by specifying the window or frame name. For example, if a variable called phoneNumber is declared in a document, you can refer to this variable from an iframe as parent.phoneNumber.</p>
-        </header>
+        
         </section>
 
         <section class="main-section" id="Constants">
-            <header>
-            <h1>Constants</h1>
+            <header>Constants</header>
+             
             <p>You can create a read-only, named constant with the const keyword. The syntax of a constant identifier is the same as for a variable identifier: it must start with a letter, underscore or dollar sign and can contain alphabetic, numeric, or underscore characters.</p>
 
             <code>const PI = 3.14;
@@ -179,12 +181,12 @@
             <code>const MY_OBJECT = {"key": "value"};
                     MY_OBJECT.key = "otherValue";</code>
 
-                </header>
+               
         </section>
 
         <section class="main-section" id="Data_Types">
-            <header>
-            <h1>Data Types</h1>
+            <header>Data Types</header>
+             
 
             <p>The latest ECMAScript standard defines seven data types:</p>
 
@@ -207,8 +209,15 @@
 
             <p>Although these data types are a relatively small amount, they enable you to perform useful functions with your applications. Objects and functions are the other fundamental elements in the language. You can think of objects as named containers for values, and functions as procedures that your application can perform.</p>
 
-        </header>
+            <section class="main-section" id="Reference">
+                <header>Reference</header>
+                <ul>
+                    <li>All the documentation in this page is taken from <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide">MDN</a></li>
+                </ul>
+            </section>
+       
         </section>
     </main>
+</div>
 </body>
 </html>
