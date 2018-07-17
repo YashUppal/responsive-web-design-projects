@@ -16,6 +16,8 @@ body {
     background: linear-gradient(to right, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     display: grid;
     grid-template-rows: 1fr;
+    position: fixed;
+    width: 100vw;
 }
 
 #navbar ul {
@@ -55,26 +57,120 @@ body {
 #projects {
     display: grid;
     grid-template-columns: 1fr;
-
+    justify-items: center;
+    color: #00B4DB;
 }
 
-.project-title {
-    font-size: 1.2em;
-    text-align: center;
 
-}
 
 .project-tile {
-
-    background: gray;
-    justify-items: flex-end;
+    display: grid;
+    justify-items: center;
+    padding: 5%;
     
+}
+
+.project-tile a {
+    justify-content: center;
+    display: block;
+    padding: 5%;
+    text-decoration: none;
+    color: #00B4DB;
 }
 
 .project-img {
     border-radius: 10px;
     width: 50%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
+}
+
+.project-link {
+    text-align: center;
+}
+
+#contact {
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30vh 10vh 10vh 10vh;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: #00B4DB;
+}
+
+#contact button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+footer {
+    display: grid;
+    background: rgb(86, 121, 141);
+    color: white;
+    padding: 20px;
+}
+
+@media only screen and (min-width: 1023px) {
+
+
+    #welcome-section {
+        height: 100vh;
+        background: #00B4DB;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        justify-items: center;
+        align-content: center;
+        color: white;
+    }
+    
+
+    #john-photo {
+        border-radius: 50%;
+        width: 20%;
+        height: auto;
+    }
+    
+
+    #projects {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /* grid-template-row: auto 1fr 1fr; */
+        justify-items: center;
+        color: #00B4DB;
+    }
+
+
+    #project-here {
+        text-align: center;
+        color: #00B3DB;
+    }
+    
+    .project-link {
+        text-align: center;
+        font-size: 1.3em;
+    }
+
+
+    #contact {
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 10vh 20vh;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        color: #00B4DB;
+    }
+    
+    #contact button {
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        margin: 50px;
+    }
+
 }
